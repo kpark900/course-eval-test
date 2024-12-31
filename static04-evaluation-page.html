@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Evaluation Analysis - Course KMA00101</title>
+    <style>
+        /* Base styles from main layout */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --background-color: #f8f9fa;
+            --text-color: #333;
+            --success-color: #27ae60;
+            --warning-color: #f1c40f;
+            --danger-color: #e74c3c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .header, .nav, .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+        }
+
+        .nav {
+            background-color: var(--secondary-color);
+            padding: 0.5rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-list a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        /* Evaluation specific styles */
+        .evaluation-section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .stats-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .stat-box {
+            background: var(--background-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin: 0.5rem 0;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .rating-distribution {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .rating-bar {
+            background: #e9ecef;
+            height: 24px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 0.5rem 0;
+        }
+
+        .rating-fill {
+            height: 100%;
+            background: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--background-color);
+        }
+
+        .score-band {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .high-score {
+            background-color: rgba(39, 174, 96, 0.2);
+            color: var(--success-color);
+        }
+
+        .med-score {
+            background-color: rgba(241, 196, 15, 0.2);
+            color: var(--warning-color);
+        }
+
+        .low-score {
+            background-color: rgba(231, 76, 60, 0.2);
+            color: var(--danger-color);
+        }
+
+        .insight-box {
+            background: #e8f4f8;
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .correlation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .correlation-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Course Evaluation Analysis</h1>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="demographics.html">Demographics</a></li>
+                <li><a href="performance.html">Performance</a></li>
+                <li><a href="evaluation.html">Evaluation</a></li>
+                <li><a href="findings.html">Findings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="evaluation-section">
+            <h2>Overall Evaluation Scores</h2>
+            <div class="stats-overview">
+                <div class="stat-box">
+                    <div class="stat-label">Mean Satisfaction Score</div>
+                    <div class="stat-value">8.33</div>
+                    <div>out of 10</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Response Rate</div>
+                    <div class="stat-value">100%</div>
+                    <div>All students responded</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">High Satisfaction Rate</div>
+                    <div class="stat-value">46%</div>
+                    <div>Scores 9-10</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="evaluation-section">
+            <h2>Question-wise Analysis</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Question</th>
+                        <th>Mean Score</th>
+                        <th>Median</th>
+                        <th>Range</th>
+                        <th>Response Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>선택문항4</td>
+                        <td>8.40</td>
+                        <td>8.0</td>
+                        <td>6-10</td>
+                        <td>100%</td>
+                    </tr>
+                    <tr>
+                        <td>선택문항6</td>
+                        <td>8.20</td>
+                        <td>8.0</td>
+                        <td>4-10</td>
+                        <td>100%</td>
+                    </tr>
+                    <tr>
+                        <td>선택문항7</td>
+                        <td>8.47</td>
+                        <td>10.0</td>
+                        <td>6-10</td>
+                        <td>100%</td>
+                    </tr>
+                    <tr>
+                        <td>선택문항8</td>
+                        <td>8.47</td>
+                        <td>10.0</td>
+                        <td>6-10</td>
+                        <td>100%</td>
+                    </tr>
+                    <tr>
+                        <td>선택문항9</td>
+                        <td>8.33</td>
+                        <td>8.0</td>
+                        <td>4-10</td>
+                        <td>100%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="evaluation-section">
+            <h2>College-wise Evaluation</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>College</th>
+                        <th>Students</th>
+                        <th>Avg Score</th>
+                        <th>Score Range</th>
+                        <th>Notable Patterns</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ICT융합대학</td>
+                        <td>2</td>
+                        <td><span class="score-band high-score">9.00</span></td>
+                        <td>9.00-9.00</td>
+                        <td>Consistently High</td>
+                    </tr>
+                    <tr>
+                        <td>공과대학</td>
+                        <td>19</td>
+                        <td><span class="score-band high-score">8.55</span></td>
+                        <td>8.42-8.74</td>
+                        <td>Strong Performance</td>
+                    </tr>
+                    <tr>
+                        <td>예술체육대학</td>
+                        <td>2</td>
+                        <td><span class="score-band high-score">8.33</span></td>
+                        <td>8.00-9.00</td>
+                        <td>Above Average</td>
+                    </tr>
+                    <tr>
+                        <td>건축대학</td>
+                        <td>5</td>
+                        <td><span class="score-band med-score">7.56</span></td>
+                        <td>6.80-8.40</td>
+                        <td>Moderate</td>
+                    </tr>
+                    <tr>
+                        <td>자연과학대학</td>
+                        <td>2</td>
+                        <td><span class="score-band med-score">7.11</span></td>
+                        <td>6.00-8.00</td>
+                        <td>Variable</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="evaluation-section">
+            <h2>Response Pattern Analysis</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Score Range</th>
+                        <th>Frequency</th>
+                        <th>Percentage</th>
+                        <th>Characteristics</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9-10</td>
+                        <td>13-16</td>
+                        <td>43-53%</td>
+                        <td>Highly Satisfied</td>
+                    </tr>
+                    <tr>
+                        <td>7-8</td>
+                        <td>11-14</td>
+                        <td>37-47%</td>
+                        <td>Satisfied</td>
+                    </tr>
+                    <tr>
+                        <td>5-6</td>
+                        <td>2-3</td>
+                        <td>7-10%</td>
+                        <td>Neutral</td>
+                    </tr>
+                    <tr>
+                        <td>≤4</td>
+                        <td>0-1</td>
+                        <td>0-3%</td>
+                        <td>Less Satisfied</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="evaluation-section">
+            <h2>Key Findings</h2>
+            <div class="insight-box">
+                <h3>Primary Observations</h3>
+                <ul>
+                    <li>High overall satisfaction (mean 8.33/10)</li>
+                    <li>Strong correlation with academic performance</li>
+                    <li>Consistent patterns across evaluation dimensions</li>
+                    <li>Notable college-specific variations</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Academic Year 2024 • Course KMA00101 Analysis Report</p>
+        </div>
+    </footer>
+</body>
+</html>
