@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course KMA00101 Analysis</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --background-color: #f8f9fa;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav {
+            background-color: var(--secondary-color);
+            padding: 0.5rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-list a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-list a:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .main-content {
+            padding: 2rem 0;
+        }
+
+        .hero {
+            background-color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .stat-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .metric {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Course KMA00101 Analysis</h1>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="demographics.html">Demographics</a></li>
+                <li><a href="performance.html">Performance</a></li>
+                <li><a href="evaluation.html">Evaluation</a></li>
+                <li><a href="findings.html">Findings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="container">
+                <h2>Course Overview - Academic Year 2024</h2>
+                <p>Comprehensive analysis of student performance, demographics, and evaluation data for Course KMA00101, Section 9.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Student Enrollment</h3>
+                    <div class="metric">30</div>
+                    <p>Total enrolled students</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Average GPA</h3>
+                    <div class="metric">3.47</div>
+                    <p>Mean academic performance</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Satisfaction Score</h3>
+                    <div class="metric">8.33/10</div>
+                    <p>Average student satisfaction</p>
+                </div>
+                <div class="stat-card">
+                    <h3>College Representation</h3>
+                    <div class="metric">5</div>
+                    <p>Different colleges represented</p>
+                </div>
+            </div>
+
+            <section class="key-findings">
+                <h2>Key Highlights</h2>
+                <ul>
+                    <li>Strong overall course effectiveness with high satisfaction rates</li>
+                    <li>Balanced gender distribution with equal representation</li>
+                    <li>Significant performance variations across colleges</li>
+                    <li>Clear patterns of academic progression through year levels</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Academic Year 2024 • Course KMA00101 Analysis Report</p>
+        </div>
+    </footer>
+</body>
+</html>
