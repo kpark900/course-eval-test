@@ -1,0 +1,9 @@
+# .gitignore example for Streamlit projects
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.env
+.streamlit/secrets.toml
+
+.DS_Store

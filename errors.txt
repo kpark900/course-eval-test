@@ -1,0 +1,4 @@
+File "/Users/kpro/course-eval/streamlit_app/survey_analysis_app.py", line 236
+              def display_size_range_analysis(st, analyzer):
+             ^
+IndentationError: unexpected indent
