@@ -1,0 +1,14 @@
+Step 1: Commit the Changes
+
+Add the updated README.md to the staging area:
+git add README.md
+
+Commit the changes:
+git commit -m "Updated README.md with project details"
+
+Step 6: Push the Changes to GitHub
+
+Push the changes to your repository:
+git push origin main
+
+Replace main with your branch name if it's different.

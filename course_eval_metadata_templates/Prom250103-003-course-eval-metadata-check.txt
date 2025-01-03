@@ -1,0 +1,9 @@
+Prom250103-003-course-eval-metadata-check.txt
+
+ "Please review the example metadata structure in uploaded files. The metadata should be based on the following survey dataset structure: Year,Semester,Campus,College,CourseNumber,CourseCode,CourseName,ProfessorName,ProfessorID,Survey1,Survey2,Survey3,Survey4,Survey5,Survey6,Survey7,Survey8,GroupCode 
+
+Ensure that the metadata to include: 1. For each survey question (Survey1 to Survey7):  Average scores for department, college, and Humanities/Sciences campuses  Top 10 colleges with highest scores  Top 10 courses with highest scores  10 most frequent keywords in course names 2. Top courses offered by both departments and colleges 3. 
+
+Data tables for individual webpages, one for each survey question (Survey1 to Survey7) 
+
+Please populate CSV templates with sample datapoints that reflect this structure. Include enough variety in the sample data to demonstrate the range of possible entries and ensure consistency across related fields. The metadata should support the creation of individual webpages for analysis of each survey question's results. Each template should be designed to facilitate efficient data visualization and reporting. Please present the populaged templates one at a time, allowing for review and confirmation before proceeding to the next item."
