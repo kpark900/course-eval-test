@@ -1,0 +1,36 @@
+Successfully loaded 26951 records
+Data cleaning completed
+Statistics computation completed
+
+Course Evaluation Analysis Summary
+================================
+Total Records: 26,951
+Unique Courses: 1,344
+Unique Professors: 1
+
+Survey Score Statistics
+---------------------
+Survey1: Mean = 3.48, Median = 3.00
+Survey2: Mean = 3.94, Median = 4.00
+Survey3: Mean = 3.95, Median = 4.00
+Survey4: Mean = 3.79, Median = 4.00
+Survey5: Mean = 4.05, Median = 4.00
+Survey6: Mean = 4.12, Median = 4.00
+Survey7: Mean = 4.08, Median = 4.00
+
+College-wise Statistics
+---------------------
+ICT융합대학: n=1,091, Mean=3.94, SD=0.77
+건축대학: n=347, Mean=4.04, SD=0.80
+경영대학: n=677, Mean=3.97, SD=0.77
+공과대학: n=2,714, Mean=3.89, SD=0.81
+국제학부: n=176, Mean=4.66, SD=0.55
+대학: n=2,540, Mean=3.88, SD=0.74
+미래융합대학: n=921, Mean=3.85, SD=0.91
+방목기초교육대학: n=13,139, Mean=3.86, SD=0.83
+법과대학: n=485, Mean=4.04, SD=0.75
+사회과학대학: n=1,656, Mean=3.87, SD=0.75
+예술체육대학: n=1,192, Mean=4.31, SD=0.72
+인문대학: n=1,512, Mean=4.04, SD=0.75
+자연과학대학: n=501, Mean=3.98, SD=0.72
+Processed data saved to anon-course-eval-24_1Data-cp_processed.csv

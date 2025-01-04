@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demographics Analysis - Course KMA00101</title>
+    <style>
+        /* Base styles from main layout */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --background-color: #f8f9fa;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .header, .nav, .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+        }
+
+        .nav {
+            background-color: var(--secondary-color);
+            padding: 0.5rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-list a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        /* Demographics specific styles */
+        .data-section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .data-card {
+            background: var(--background-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            background: white;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--background-color);
+        }
+
+        .chart-container {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin: 2rem 0 1rem;
+        }
+
+        .highlight-box {
+            background: #e8f4f8;
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .stat-highlight {
+            font-size: 1.25rem;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Demographics Analysis</h1>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="demographics.html">Demographics</a></li>
+                <li><a href="performance.html">Performance</a></li>
+                <li><a href="evaluation.html">Evaluation</a></li>
+                <li><a href="findings.html">Findings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="data-section">
+            <h2>College Distribution</h2>
+            <div class="highlight-box">
+                <p>Total number of students: <span class="stat-highlight">30</span></p>
+                <p>Number of colleges represented: <span class="stat-highlight">5</span></p>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>College</th>
+                        <th>Students</th>
+                        <th>Percentage</th>
+                        <th>Departments</th>
+                        <th>Gender Ratio (M/F)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>공과대학</td>
+                        <td>19</td>
+                        <td>63.3%</td>
+                        <td>9</td>
+                        <td>12/7</td>
+                    </tr>
+                    <tr>
+                        <td>건축대학</td>
+                        <td>5</td>
+                        <td>16.7%</td>
+                        <td>3</td>
+                        <td>2/3</td>
+                    </tr>
+                    <tr>
+                        <td>자연과학대학</td>
+                        <td>2</td>
+                        <td>6.7%</td>
+                        <td>2</td>
+                        <td>0/2</td>
+                    </tr>
+                    <tr>
+                        <td>예술체육대학</td>
+                        <td>2</td>
+                        <td>6.7%</td>
+                        <td>1</td>
+                        <td>0/2</td>
+                    </tr>
+                    <tr>
+                        <td>ICT융합대학</td>
+                        <td>2</td>
+                        <td>6.7%</td>
+                        <td>1</td>
+                        <td>1/1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="data-section">
+            <h2>Year Level Distribution</h2>
+            <div class="data-grid">
+                <div class="data-card">
+                    <h3>Student Distribution by Year</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Year Level</th>
+                                <th>Total</th>
+                                <th>Percentage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1st Year</td>
+                                <td>15</td>
+                                <td>50.0%</td>
+                            </tr>
+                            <tr>
+                                <td>2nd Year</td>
+                                <td>13</td>
+                                <td>43.3%</td>
+                            </tr>
+                            <tr>
+                                <td>3rd Year</td>
+                                <td>1</td>
+                                <td>3.3%</td>
+                            </tr>
+                            <tr>
+                                <td>4th Year</td>
+                                <td>1</td>
+                                <td>3.3%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="data-card">
+                    <h3>Gender Distribution</h3>
+                    <div class="highlight-box">
+                        <p>Male Students: <span class="stat-highlight">15 (50%)</span></p>
+                        <p>Female Students: <span class="stat-highlight">15 (50%)</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="data-section">
+            <h2>Admission Year Patterns</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Total</th>
+                        <th>Gender (M/F)</th>
+                        <th>Key Trends</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024</td>
+                        <td>12</td>
+                        <td>6/6</td>
+                        <td>Perfect gender balance, Broad college representation</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>12</td>
+                        <td>4/8</td>
+                        <td>Female majority, Diverse program selection</td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>3</td>
+                        <td>2/1</td>
+                        <td>Limited cohort size, Focused program selection</td>
+                    </tr>
+                    <tr>
+                        <td>2021</td>
+                        <td>3</td>
+                        <td>3/0</td>
+                        <td>Male-only cohort, Engineering focus</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Academic Year 2024 • Course KMA00101 Analysis Report</p>
+        </div>
+    </footer>
+</body>
+</html>

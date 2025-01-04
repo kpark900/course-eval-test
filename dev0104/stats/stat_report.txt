@@ -1,0 +1,22 @@
+Successfully loaded 26,951 records
+
+Advanced results saved to advanced_survey_analysis.xlsx
+
+Advanced Statistical Analysis Summary
+===================================
+
+Reliability Metrics:
+Cronbach's Alpha: 0.937
+Split-Half Reliability: 0.847
+
+Response Patterns:
+Mean Response Entropy: 1.825
+
+Factor Analysis:
+Total Variance Explained: 89.3%
+
+Normality Tests (Combined Score):
+Anderson-Darling statistic: 436.306
+Anderson-Darling critical value (5%): 0.787
+Normality rejected: True
+Kolmogorov-Smirnov p-value: 0.000

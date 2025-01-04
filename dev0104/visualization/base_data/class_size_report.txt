@@ -1,0 +1,13 @@
+Loaded 26,951 records from ../data_input/anon-course-eval-24_1Data-cp.csv
+
+Class Size Analysis Summary
+==========================
+Total number of classes: 2,447
+
+Size Distribution:
+Small: 1,940 classes (79.3%)
+Medium: 428 classes (17.5%)
+Large: 61 classes (2.5%)
+Very Large: 18 classes (0.7%)
+
+Results saved to class_sizes.csv

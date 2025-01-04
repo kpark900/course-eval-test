@@ -1,0 +1,29 @@
+Successfully loaded 26,951 records
+
+Results saved to survey_analysis.xlsx
+
+Survey Analysis Summary
+======================
+
+Overall Statistics:
+Total Records: 26,951
+Unique Courses: 1,265
+Unique Colleges: 13
+
+Survey Score Averages:
+Survey1: Mean = 3.478 (±1.096)
+Survey2: Mean = 3.936 (±0.932)
+Survey3: Mean = 3.946 (±0.931)
+Survey4: Mean = 3.795 (±0.941)
+Survey5: Mean = 4.052 (±0.900)
+Survey6: Mean = 4.123 (±0.904)
+Survey7: Mean = 4.082 (±0.911)
+SurveyCombined: Mean = 3.916 (±0.807)
+
+Top Performing Colleges (Combined Score):
+College  count  mean
+   국제학부    176 4.655
+ 예술체육대학   1192 4.311
+   건축대학    347 4.044
+   인문대학   1512 4.044
+   법과대학    485 4.039

@@ -1,0 +1,5 @@
+group_code,course_name,college_id,college_name,semester_id,response_count,class_size_category,metric_type,total_avg,college_rank,total_count_college,size_category_rank,total_count_size,overall_rank,total_count_all
+CSE101,Introduction to Programming,ENG,Engineering,2024-1,15,small,total_avg,4.50,1,150,5,412,15,2500
+PHY201,Physics I,SCI,Natural Sciences,2024-1,35,medium,total_avg,4.80,1,120,2,217,3,2500
+MAT301,Advanced Calculus,SCI,Natural Sciences,2024-1,75,large,total_avg,4.70,2,120,1,54,8,2500
+BIO401,Advanced Biology,SCI,Natural Sciences,2024-1,120,very_large,total_avg,4.65,3,120,2,36,10,2500

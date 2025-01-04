@@ -1,0 +1,11 @@
+2025-01-03 23:32:15,833 - ERROR - Error loading ./metadata_output/1_standardizedcoremetricspopulated.csv: [Errno 2] No such file or directory: './metadata_output/1_standardizedcoremetricspopulated.csv'
+2025-01-03 23:34:23,787 - INFO - Loaded ./metadata_output/1_standardized-core-metrics-populated.csv
+2025-01-03 23:34:23,804 - INFO - Loaded ./metadata_output/2_standardized-groupcode-metrics-populated.csv
+2025-01-03 23:34:23,813 - INFO - Loaded ./metadata_output/3_standardized-course-rankings-populated.csv
+2025-01-03 23:34:23,815 - INFO - Loaded ./metadata_output/4_standardized-size-distribution-populated.csv
+2025-01-03 23:34:23,829 - INFO - Loaded ./metadata_output/5_standardized-detailed-stats-populated.csv
+2025-01-03 23:34:23,832 - INFO - Updated ./html_static_pages/index.html
+2025-01-03 23:34:23,835 - INFO - Updated ./html_static_pages/demographics.html
+2025-01-03 23:34:23,839 - INFO - Updated ./html_static_pages/performance.html
+2025-01-03 23:34:23,847 - INFO - Updated ./html_static_pages/evaluation.html
+2025-01-03 23:34:23,850 - INFO - Updated ./html_static_pages/findings.html

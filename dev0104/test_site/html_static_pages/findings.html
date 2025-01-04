@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Key Findings and Insights - Course KMA00101</title>
+<style>
+        /* Base styles from main layout */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --background-color: #f8f9fa;
+            --text-color: #333;
+            --success-color: #27ae60;
+            --warning-color: #f1c40f;
+            --danger-color: #e74c3c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .header, .nav, .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+        }
+
+        .nav {
+            background-color: var(--secondary-color);
+            padding: 0.5rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-list a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        /* Findings specific styles */
+        .findings-section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .key-metric {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: var(--accent-color);
+            color: white;
+            border-radius: 16px;
+            font-weight: 500;
+            margin: 0 0.5rem;
+        }
+
+        .insight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .insight-card {
+            background: var(--background-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-top: 4px solid var(--accent-color);
+        }
+
+        .recommendation-box {
+            background: #e8f4f8;
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .trend-indicator {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            margin-left: 0.5rem;
+        }
+
+        .positive {
+            background-color: rgba(39, 174, 96, 0.1);
+            color: var(--success-color);
+        }
+
+        .neutral {
+            background-color: rgba(241, 196, 15, 0.1);
+            color: var(--warning-color);
+        }
+
+        .negative {
+            background-color: rgba(231, 76, 60, 0.1);
+            color: var(--danger-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .summary-points {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .summary-points li {
+            margin: 0.75rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .summary-points li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+
+        .correlation-box {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .correlation-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-right: 1rem;
+        }
+    </style>
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#2c3e50" name="theme-color"/>
+<meta content="yes" name="mobile-web-app-capable"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<style>
+        @media (max-width: 768px) {
+            .container { padding: 0.5rem; }
+            .nav-list { flex-direction: column; }
+            .nav-list a { display: block; text-align: center; }
+            .metrics-grid, .stats-grid, .data-grid {
+                grid-template-columns: 1fr;
+            }
+            table { 
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            .metric-value { font-size: 1.5rem; }
+            .header h1 { font-size: 1.5rem; }
+        }
+        </style></head>
+<body>
+<header class="header">
+<div class="container">
+<h1>Key Findings and Insights</h1>
+</div>
+</header>
+<nav class="nav">
+<div class="container">
+<ul class="nav-list">
+<li><a href="index.html">Home</a></li>
+<li><a href="demographics.html">Demographics</a></li>
+<li><a href="performance.html">Performance</a></li>
+<li><a href="evaluation.html">Evaluation</a></li>
+<li><a href="findings.html">Findings</a></li>
+</ul>
+</div>
+</nav>
+<main class="container">
+<div class="findings-section">
+<h2>Overall Course Effectiveness</h2>
+<div class="insight-grid">
+<div class="insight-card">
+<h3>Academic Achievement</h3>
+<div class="correlation-box">
+<span class="correlation-value">3.47</span>
+<span>Mean GPA</span>
+<span class="trend-indicator positive">↑ Above Target</span>
+</div>
+<ul class="summary-points">
+<li>73.4% of students achieve above 3.5 GPA</li>
+<li>Strong correlation between GPA and course grades (r = 0.72)</li>
+<li>Consistent improvement across year levels</li>
+</ul>
+</div>
+<div class="insight-card">
+<h3>Student Satisfaction</h3>
+<div class="correlation-box">
+<span class="correlation-value">8.33</span>
+<span>Mean Satisfaction Score</span>
+<span class="trend-indicator positive">↑ High</span>
+</div>
+<ul class="summary-points">
+<li>46% report high satisfaction (9-10 range)</li>
+<li>100% response rate across all metrics</li>
+<li>Strong positive feedback on course delivery</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="findings-section">
+<h2>Demographic Insights</h2>
+<div class="insight-grid">
+<div class="insight-card">
+<h3>College Distribution</h3>
+<ul class="summary-points">
+<li>Engineering dominates with 63.3% enrollment</li>
+<li>Five colleges represented in total</li>
+<li>Varied performance patterns across colleges</li>
+</ul>
+</div>
+<div class="insight-card">
+<h3>Student Composition</h3>
+<ul class="summary-points">
+<li>Perfect gender balance (15M/15F)</li>
+<li>93.3% first and second-year students</li>
+<li>Diverse departmental representation</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="findings-section">
+<h2>Performance Patterns</h2>
+<div class="recommendation-box">
+<h3>Key Correlations</h3>
+<ul class="summary-points">
+<li>Strong GPA-Evaluation correlation (r = 1.002)</li>
+<li>High course grade correlation (r = 1.011)</li>
+<li>Significant college effects (r = 0.913)</li>
+</ul>
+</div>
+<div class="recommendation-box">
+<h3>Notable Trends</h3>
+<ul class="summary-points">
+<li>ICT융합대학 leads with 4.03 average GPA</li>
+<li>Clear progression in performance with academic year</li>
+<li>Consistent effectiveness across gender groups</li>
+</ul>
+</div>
+</div>
+<div class="findings-section">
+<h2>Strategic Implications</h2>
+<div class="insight-grid">
+<div class="insight-card">
+<h3>Strengths</h3>
+<ul class="summary-points">
+<li>High overall academic achievement</li>
+<li>Strong student satisfaction levels</li>
+<li>Effective knowledge progression</li>
+</ul>
+</div>
+<div class="insight-card">
+<h3>Areas for Enhancement</h3>
+<ul class="summary-points">
+<li>College-specific performance variations</li>
+<li>Upper-year student representation</li>
+<li>Support for specific student segments</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="findings-section">
+<h2>Future Recommendations</h2>
+<div class="recommendation-box">
+<ul class="summary-points">
+<li>Implement targeted support for identified performance gaps</li>
+<li>Enhance cross-college collaboration and resource sharing</li>
+<li>Develop strategies to increase upper-year enrollment</li>
+<li>Continue monitoring demographic trends for ongoing optimization</li>
+</ul>
+</div>
+</div>
+</main>
+<footer class="footer">
+<div class="container">
+<p>Academic Year 2024 • Course KMA00101 Analysis Report</p>
+</div>
+</footer>
+</body>
+</html>

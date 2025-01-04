@@ -1,0 +1,9 @@
+Unnamed: 0,anderson_statistic,anderson_critical_value,anderson_significant,kolmogorov_smirnov_pval
+Survey1,1168.556639734135,0.787,True,0
+Survey2,1531.130217546364,0.787,True,0
+Survey3,1552.75137799529,0.787,True,0
+Survey4,1664.140806835399,0.787,True,0
+Survey5,1766.126776459481,0.787,True,0
+Survey6,1940.15339675299,0.787,True,0
+Survey7,1844.006611173143,0.787,True,0
+SurveyCombined,436.3062480428416,0.787,True,0

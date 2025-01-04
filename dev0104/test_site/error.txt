@@ -1,0 +1,19 @@
+2025-01-04 01:24:48,499 - WARNING - Optional column missing: Department. Some calculations will be skipped.
+Traceback (most recent call last):
+  File "/Users/kpro/projects/course-eval-test/test_data/calculate_metrics.py", line 192, in <module>
+    main()
+  File "/Users/kpro/projects/course-eval-test/test_data/calculate_metrics.py", line 186, in main
+    calculator.calculate_and_save_all_metrics(output_file)
+  File "/Users/kpro/projects/course-eval-test/test_data/calculate_metrics.py", line 80, in calculate_and_save_all_metrics
+    json.dump(combined_metrics, f, indent=4)
+  File "/opt/anaconda3/lib/python3.12/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/opt/anaconda3/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/opt/anaconda3/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/opt/anaconda3/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/opt/anaconda3/lib/python3.12/json/encoder.py", line 377, in _iterencode_dict
+    raise TypeError(f'keys must be str, int, float, bool or None, '
+TypeError: keys must be str, int, float, bool or None, not tuple

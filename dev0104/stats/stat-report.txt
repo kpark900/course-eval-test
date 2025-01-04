@@ -1,0 +1,28 @@
+Successfully loaded 26,951 records
+
+Results saved to survey_statistics_report.xlsx
+
+Key Statistical Findings
+=======================
+
+Distribution Statistics (Combined Score):
+Mean: 3.916 (95% CI: 3.906 - 3.925)
+Median: 4.000
+IQR: 1.429
+Skewness: -0.375
+Kurtosis: -0.184
+
+Group Comparisons:
+
+College Performance (top 3 by mean):
+          mean    std         cv
+College                         
+국제학부     4.655  0.550  11.815252
+예술체육대학   4.311  0.723  16.771051
+건축대학     4.044  0.803  19.856578
+
+Campus Performance (top 3 by mean):
+         mean    std         cv
+Campus                         
+자연캠퍼스   3.976  0.821  20.648893
+인문캠퍼스   3.875  0.795  20.516129

@@ -1,0 +1,4 @@
+group_code,course_name,college_id,college_name,professor_id,total_avg,survey1_avg,survey2_avg,survey3_avg,survey4_avg,survey5_avg,survey6_avg,survey7_avg,response_count,percentile_rank,semester_id
+CSE101,Introduction to Programming,ENG,Engineering,P001,4.5,4.6,4.5,4.4,4.5,4.4,4.5,4.6,35,95,2024-1
+PHY201,Physics I,SCI,Natural Sciences,P002,4.2,4.3,4.1,4.2,4.0,4.3,4.2,4.3,42,85,2024-1
+MAT301,Advanced Calculus,SCI,Natural Sciences,P003,4.6,4.7,4.6,4.5,4.6,4.7,4.5,4.6,28,98,2024-1

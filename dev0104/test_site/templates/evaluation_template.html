@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <table border="1">
+        <tr>
+            <th>Course Code</th>
+            <th>Survey1 Median</th>
+            <th>Survey2 Median</th>
+        </tr>
+        {% for row in evaluation_data %}
+        <tr>
+            <td>{{ row.CourseCode }}</td>
+            <td>{{ row.Survey1_Median }}</td>
+            <td>{{ row.Survey2_Median }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,5 +1,0 @@
-class_size_category,size_range,metric_type,semester_id,course_count,response_count,total_avg,median_score,std_dev,q1_score,q3_score,top_10_avg,bottom_10_avg,score_range,completion_rate,college_distribution
-small,10-20,total_avg,2024-1,412,6180,4.35,4.40,0.45,4.10,4.60,4.85,3.75,1.10,92.5,"ENG:120,SCI:95,HUM:85,ART:112"
-medium,21-50,total_avg,2024-1,217,7595,4.42,4.45,0.38,4.20,4.65,4.88,3.85,1.03,94.2,"ENG:80,SCI:60,HUM:45,ART:32"
-large,51-100,total_avg,2024-1,54,3780,4.38,4.40,0.42,4.15,4.62,4.82,3.80,1.02,88.5,"ENG:25,SCI:15,HUM:8,ART:6"
-very_large,100+,total_avg,2024-1,36,4320,4.30,4.32,0.48,4.05,4.55,4.75,3.70,1.05,85.8,"ENG:15,SCI:12,HUM:5,ART:4"
