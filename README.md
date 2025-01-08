@@ -1,6 +1,13 @@
 # course-eval-test
 # https://kpark900.github.io/course-eval-test/
 
+git add .
+git commit -m "Your commit message"
+git push origin branch-name
+
+git status
+
+
 # Course Evaluation Test Repository
 
 This repository contains resources and scripts for analyzing course evaluation data.
